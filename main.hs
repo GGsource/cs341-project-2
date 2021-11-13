@@ -3,7 +3,7 @@ import Data.List
 import System.Directory
 import Data.String(words)
 
---This adds the line from "inputfile" to "directory" on a new line
+--This adds the line given to "directory" on a new line
 addToDirectory :: [Char] -> [Char] -> [Char] -> FilePath -> IO ()
 addToDirectory  fstName lstName phnNum outputFile = do
         appendFile outputFile  (fstName ++ " " ++ lstName ++ " " ++ phnNum ++ "\n")
